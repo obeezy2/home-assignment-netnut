@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Data Collector</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #exchangeTable {
+        margin: auto;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      #exchangeTable th,
+      #exchangeTable td {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 3px;
+      }
+
+      #exchangeTable tr:nth-child(even) {
+        background-color: #fff4f4;
+      }
+    </style>
+    <script src="apiService.js" defer></script>
+    <script src="viewLogic.js" defer></script>
+  </head>
+  <body>
+    <h1>Currency Price for Dollar and Euro</h1>
+    <table id="exchangeTable">
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Rate (TO ILS)</th>
+          <th>Time</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="exchangeEuro">
+        <!-- Rows will be inserted here -->
+      </tbody>
+    </table>
+  </body>
+</html>
